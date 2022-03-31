@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImage from "../public/Headshot.jpg";
+import heroImage from "../public/Images/Headshot.jpg";
 
 export const HomePage = () => {
   return(

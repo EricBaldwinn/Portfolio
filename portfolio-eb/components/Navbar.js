@@ -29,7 +29,7 @@ export const Navbar = () => {
                 </div>
                 <div className="flex justify-end items-center flex-shrink-0">
                     <h1 className="font-semibold cursor-pointer hidden md:block">
-                      <span className="text-blue-600">Resume</span>
+                      <span className="text-blue-600">EricBaldwinn@gmail.com</span>
                     </h1>
                   </div>
                   </div>
