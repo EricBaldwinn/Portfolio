@@ -3,8 +3,8 @@
 export const Socials = () => {
 
   return(
-    <div>
-      
+    <div name="socials">
+
     </div>
   )
 }

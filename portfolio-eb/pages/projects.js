@@ -10,7 +10,7 @@ export const Projects = () => {
 
   return (
     <div>
-        <Element id="work" name="work">
+        <Element id="projects" name="projects">
           <div className="w-full my-20 h-auto flex flex-col justify-center items-center">
             <h2 className="text-blue-600 text-6xl font-bold text-center">My Projects</h2>
           </div>

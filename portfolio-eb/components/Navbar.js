@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { useState } from "react";
 
 
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -23,13 +24,13 @@ export const Navbar = () => {
               <div className="hidden md:block">
                 <div className="flex justify-start px-10 sm:px-20 whitespace-nowrap space-x-5 sm:space-x-10">
                   <Link activeClass='Home' to="home" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Home</Link>
-                  <Link activeClass='about' to="about" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">About</Link>
                   <Link activeClass='Projects' to="projects" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Projects</Link>
+                  <Link activeClass='Socials' to="socials" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Socials</Link>
                 </div>
                 </div>
                 <div className="flex justify-end items-center flex-shrink-0">
                     <h1 className="font-semibold cursor-pointer hidden md:block">
-                      <span className="text-blue-600">EricBaldwinn@gmail.com</span>
+                      <a href="/resume" target="_blank" className="text-blue-600">Resume</a>
                     </h1>
                   </div>
                   </div>
