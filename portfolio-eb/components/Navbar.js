@@ -23,6 +23,7 @@ export const Navbar = () => {
               <div className="hidden md:block">
                 <div className="flex justify-start px-10 sm:px-20 whitespace-nowrap space-x-5 sm:space-x-10">
                   <Link activeClass='Home' to="home" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Home</Link>
+                  <Link activeClass='about' to="about" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">About</Link>
                   <Link activeClass='Projects' to="projects" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Projects</Link>
                 </div>
                 </div>
