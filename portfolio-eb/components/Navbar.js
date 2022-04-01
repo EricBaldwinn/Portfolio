@@ -1,40 +1,47 @@
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 import { useState } from "react";
+import InstaIcon from "../public/Images/InstaIcon.png";
+import Image from "next/image";
 
 
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <div>
-      <nav className="fixed z-20 bg-white w-11/12">
-        <div className="w-full">
-          <div className="flex items-center h-20 w-full">
-            <div className="flex items-center sm:mx-10 md:mx-20 justify-between w-full">
+	const [isOpen, setIsOpen] = useState(false);
+	return (
+		<div>
+			<nav className="fixed z-20 bg-white w-11/12">
+				<div className="w-full">
+					<div className="flex items-center h-20 w-full">
+						<div className="flex items-center sm:mx-10 md:mx-20 justify-between w-full">
 
-              {/* For logo */}
-              <div className="flex justify-center items-center flex-shrink-0">
-                <h1 className="font-bold text-xl cursor-pointer">
-                  Eric<span className="text-blue-600">Baldwin</span>
-                </h1>
-              </div>
+							{/* For logo */}
+							<div className="flex justify-center items-center flex-shrink-0">
+								<h1 className="font-bold text-xl cursor-pointer">
+									Eric<span className="text-blue-600">Baldwin</span>
+								</h1>
+							</div>
 
-              {/* For links */}
-              <div className="hidden md:block">
-                <div className="flex justify-start px-10 sm:px-20 whitespace-nowrap space-x-5 sm:space-x-10">
-                  <Link activeClass='Home' to="home" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Home</Link>
-                  <Link activeClass='Projects' to="projects" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Projects</Link>
-                  <Link activeClass='Socials' to="socials" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Socials</Link>
-                </div>
-                </div>
-                <div className="flex justify-end items-center flex-shrink-0">
-                    <h1 className="font-semibold cursor-pointer hidden md:block">
-                      <a href="/resume" target="_blank" className="text-blue-600">Resume</a>
-                    </h1>
-                  </div>
-                  </div>
-                <div className="flex ml-20 w-10 md:hidden ">
+							{/* For links */}
+							<div className="hidden md:block">
+								<div className="flex justify-start px-10 sm:px-20 whitespace-nowrap space-x-5 sm:space-x-10">
+									<Link activeClass='Home' to="home" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Home</Link>
+									<Link activeClass='Projects' to="projects" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Projects</Link>
+									<Link activeClass='Socials' to="socials" smooth={true} offset={50} duration={500} className="cursor-pointer hover:text-blue-600 px-3 py-2 text-md">Socials</Link>
+								</div>
+							</div>
+							<div className="flex justify-end items-center flex-shrink-0">
+								<h1 className="font-semibold cursor-pointer hidden md:block">
+									<a href="/resume" target="_blank" className="text-blue-600">Resume</a>
+								</h1>
+								<div className="relative left-10">
+								<a href="https://www.linkedin.com/in/ericbaldwinn/" target="_blank">
+									<p className="text-blue-600 font-semibold cursor-pointer hidden md:block">Instagram</p>
+								</a>
+							</div>
+							</div>
+						</div>
+						<div className="flex ml-20 w-10 md:hidden ">
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type="button"
@@ -78,10 +85,10 @@ export const Navbar = () => {
 								)}
 							</button>
 						</div>
-            </div>
-          </div>
+					</div>
+				</div>
 
-          <Transition
+				<Transition
 					show={isOpen}
 					enter="transition ease-out duration-100 transform"
 					enterFrom="opacity-0 scale-95"
@@ -108,33 +115,32 @@ export const Navbar = () => {
 									Home
 								</Link>
 								<Link
-									href="/about"
-									activeClass="about"
-									to="about"
+									href="/projects"
+									activeClass="projects"
+									to="projects"
 									smooth={true}
 									offset={50}
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									About
+									Projects
 								</Link>
 
-								<Link
+								<a
 									href="/resume"
-									activeClass="resume"
-									to="resume"
-									smooth={true}
-									offset={50}
-									duration={500}
+									target="_blank"
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									Resume
-								</Link>
+									<p>Resume</p>
+								</a>
+								<a href="https://www.linkedin.com/in/ericbaldwinn/" target="_blank" className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+									<p>Instagram</p>
+								</a>
 							</div>
 						</div>
 					)}
 				</Transition>
-      </nav>
-    </div>
-  )
+			</nav>
+		</div>
+	)
 }
