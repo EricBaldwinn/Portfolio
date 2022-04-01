@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Eric Baldwin's Portfolio</title>
+        <title>Eric Baldwin&apos;s Portfolio</title>
       </Head>
       <Navbar />
       <HomePage />
