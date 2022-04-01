@@ -32,10 +32,10 @@ export const Navbar = () => {
 							</div>
 							<div className="flex justify-end items-center flex-shrink-0">
 								<h1 className="font-semibold cursor-pointer hidden md:block">
-									<a href="/resume" target="_blank" className="text-blue-600">Resume</a>
+									<a href="/resume" target="_blank" rel="noreferrer" className="text-blue-600">Resume</a>
 								</h1>
 								<div className="relative left-10">
-								<a href="https://www.linkedin.com/in/ericbaldwinn/" target="_blank">
+								<a href="https://www.linkedin.com/in/ericbaldwinn/" target="_blank" rel="noreferrer">
 									<p className="text-blue-600 font-semibold cursor-pointer hidden md:block">Instagram</p>
 								</a>
 							</div>
@@ -129,11 +129,12 @@ export const Navbar = () => {
 								<a
 									href="/resume"
 									target="_blank"
+									rel="noreferrer"
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
 									<p>Resume</p>
 								</a>
-								<a href="https://www.linkedin.com/in/ericbaldwinn/" target="_blank" className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+								<a href="https://www.linkedin.com/in/ericbaldwinn/" rel="noreferrer" target="_blank" className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 									<p>Instagram</p>
 								</a>
 							</div>

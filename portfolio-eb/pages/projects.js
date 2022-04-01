@@ -17,19 +17,19 @@ export const Projects = () => {
 
           <div className="md:flex sm:flex-col md:flex-row justify-center items-center gap-10 mt-10">
             <div className="rounded w-80 h-60 shadow-xl relative">
-              <a href="https://hulu-yt-clone-1hxk4x178-ericbaldwinn.vercel.app/?genre=fetchTrending" target="_blank">
+              <a href="https://hulu-yt-clone-1hxk4x178-ericbaldwinn.vercel.app/?genre=fetchTrending" target="_blank" rel="noreferrer">
               <Image src={Hulu} alt="Hulu" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
               <p className="relative bottom-6 text-center text-sm uppercase text-gray-400">Hulu Clone</p>
               </a>
             </div>
             <div className="rounded w-80 h-60 shadow-xl relative">
-            <a href="https://github.com/EricBaldwinn/Spotify-Clone" target="_blank">
+            <a href="https://github.com/EricBaldwinn/Spotify-Clone" target="_blank" rel="noreferrer">
               <Image src={Spotify} alt="Spotify" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
               <p className="relative bottom-6 text-center text-sm uppercase text-gray-400">Spotify Clone</p>
               </a>
             </div>
             <div className="rounded w-80 h-60 shadow-xl relative">
-              <a href="https://github.com/EricBaldwinn/Product-API" target="_blank">
+              <a href="https://github.com/EricBaldwinn/Product-API" target="_blank" rel="noreferrer">
               <Image src={Product} alt="ProductAPI" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
               <p className="relative bottom-6 text-center text-sm uppercase text-gray-400">Scaling backend</p>
               </a>
@@ -38,19 +38,19 @@ export const Projects = () => {
 
           <div className="md:flex sm:flex-col md:flex-row justify-center items-center gap-10 mt-10">
             <div className="rounded w-80 h-60 shadow-xl relative">
-              <a href="https://github.com/EricBaldwinn/bored-tour" target="_blank">
+              <a href="https://github.com/EricBaldwinn/bored-tour" target="_blank" rel="noreferrer">
               <Image src={BTImage} alt="BoredTours" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
               <p className="relative bottom-6 text-center text-sm uppercase text-gray-400">Event Registration Web App</p>
               </a>
             </div>
             <div className="rounded w-80 h-60 shadow-xl relative">
-            <a href="https://github.com/EricBaldwinn/project_catwalk" target="_blank">
+            <a href="https://github.com/EricBaldwinn/project_catwalk" target="_blank" rel="noreferrer">
               <Image src={CatWalk} alt="CatWalk" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
               <p className="relative bottom-6 text-center text-sm uppercase text-gray-400">E-commerce Site</p>
               </a>
             </div>
             <div className="rounded w-80 h-60 shadow-xl relative">
-              <a href="https://github.com/EricBaldwinn/Portfolio" target="_blank">
+              <a href="https://github.com/EricBaldwinn/Portfolio" target="_blank" rel="noreferrer">
               <Image src={Portfolio} alt="Portfolio" layout="fill" objectFit="cover" className="p-2 rounded cursor-pointer" />
               <p className="relative bottom-6 text-center text-sm uppercase text-gray-400">This Portfolio</p>
               </a>
