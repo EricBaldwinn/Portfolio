@@ -4,7 +4,7 @@ import BTImage from "../public/Images/BoredToursImage.png";
 import Spotify from "../public/Images/SpotifyImage.png";
 import Product from "../public/Images/ProductImage.png";
 import Hulu from "../public/Images/HuluImage.png";
-import CatWalk from "../public/Images/CatWalk.png";
+import CatWalk from "../public/Images/Catwalk.png";
 import Portfolio from "../public/Images/PortfolioImage.png";
 export const Projects = () => {
 
