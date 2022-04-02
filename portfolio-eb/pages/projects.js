@@ -6,7 +6,8 @@ import Product from "../public/Images/ProductImage.png";
 import Hulu from "../public/Images/HuluImage.png";
 import CatWalk from "../public/Images/Catwalk.png";
 import Portfolio from "../public/Images/PortfolioImage.png";
-export const Projects = () => {
+
+const Projects = () => {
 
   return (
     <div>
@@ -60,3 +61,5 @@ export const Projects = () => {
     </div>
   )
 }
+
+export default Projects;

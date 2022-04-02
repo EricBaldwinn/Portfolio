@@ -1,7 +1,7 @@
 import Image from "next/image";
 import heroImage from "../public/Images/Headshot.jpg";
 
-export const HomePage = () => {
+const HomePage = () => {
   return(
     <div name="home">
       <div className="flex justify-between text-center md:mx-20 md:pt-32 pt-28">
@@ -21,3 +21,5 @@ export const HomePage = () => {
     </div>
   )
 }
+
+export default HomePage;
