@@ -34,7 +34,7 @@ export const Navbar = () => {
 								</h1>
 								<div className="relative left-10">
 								<a href="https://www.linkedin.com/in/ericbaldwinn/" target="_blank" rel="noreferrer">
-									<p className="text-blue-600 font-semibold cursor-pointer hidden md:block">Instagram</p>
+									<p className="text-blue-600 font-semibold cursor-pointer hidden md:block">Linkedin</p>
 								</a>
 							</div>
 							</div>
