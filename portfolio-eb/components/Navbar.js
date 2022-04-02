@@ -1,8 +1,6 @@
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 import { useState } from "react";
-import InstaIcon from "../public/Images/InstaIcon.png";
-import Image from "next/image";
 
 
 
